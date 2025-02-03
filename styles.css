@@ -4,11 +4,25 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    margin: 0;
+    font-family: Roboto;
 }
 
 a {
     text-decoration: none;
     color: #e5e7eb;
+}
+
+button {
+    background-color: #3882f6;
+    border: none;
+    color: #e5e7eb;
+    text-align: center;
+    padding: 8px 32px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 .header, .login, .footer {
@@ -17,14 +31,45 @@ a {
 
 .login, .grid, .quote, .alert {
     flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.header, .login, .grid, .quote, .alert, .footer {
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+}
+
+.header, .footer, .intro-title {
+    color: #f9faf8;
+}
+
+.header, .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.login {
+    gap: 20px;
+}
+
+.intro-title {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.intro-text {
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
 .header {
-    font-family: Roboto;
-    color: #f9faf8;
-    display: flex;
     justify-content: space-between;
-    padding: 20px;
+}
+
+.footer {
+    justify-content: center;
 }
 
 .logo {
