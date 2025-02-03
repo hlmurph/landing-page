@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    margin: 0;
 }
 
 a {
@@ -19,12 +20,23 @@ a {
     flex-grow: 1;
 }
 
-.header {
+.header, .login, .grid, .quote, .alert, .footer {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.header, .footer {
     font-family: Roboto;
     color: #f9faf8;
     display: flex;
+}
+
+.header {
     justify-content: space-between;
-    padding: 20px;
+}
+
+.footer {
+    justify-content: center;
 }
 
 .logo {
@@ -60,8 +72,4 @@ a {
 
 .alert {
     background-color: #e5e7eb;
-}
-
-.footer {
-
 }
