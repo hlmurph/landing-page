@@ -42,10 +42,12 @@ img {
 .header, .login, .grid, .quote, .alert, .footer {
     padding-left: 15%;
     padding-right: 15%;
+    padding-top: 8%;
+    padding-bottom: 8%;
     display: flex;
 }
 
-.header, .footer, .intro-title {
+.header, .footer, .intro-title, .alert-title, .alert-text {
     color: #f9faf8;
 }
 
@@ -80,7 +82,7 @@ img {
     justify-content: center;
 }
 
-.logo {
+.logo, .alert-title {
     font-size: 24px;
     font-weight: bold;
 }
@@ -104,6 +106,7 @@ img {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    gap: 40px;
 }
 
 .grid-title {
@@ -141,6 +144,10 @@ img {
     align-self: flex-end;
 }
 
+.alert-text {
+    font-size: 18px;
+}
+
 .alert-box {
     display: flex;
     justify-content: space-evenly;
@@ -149,4 +156,13 @@ img {
     border-radius: 15px;
     padding: 30px;
     flex-grow: 1;
+}
+
+.alert-right {
+    flex-shrink: 0;
+}
+
+.alert-button {
+    margin: 0;
+    border: solid 2px #f9faf8;
 }
