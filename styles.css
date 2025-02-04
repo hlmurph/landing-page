@@ -25,6 +25,10 @@ button {
     font-weight: bold;
 }
 
+img {
+    border-radius: 20px;
+}
+
 .header, .login, .footer {
     background-color: #1f2937;
 }
@@ -52,6 +56,10 @@ button {
 
 .login {
     gap: 20px;
+}
+
+.login-img {
+    height: 200px;
 }
 
 .intro-title {
@@ -98,22 +106,47 @@ button {
     align-items: center;
 }
 
+.grid-title {
+    font-weight: 900;
+    font-size: 36px;
+    color: #1f2937;
+}
+
 .grid-boxes {
     display: flex;
     text-align: center;
+    gap: 25px;
+}
+
+.grid-img {
+    flex: 1 1 auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .quote {
     background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
 }
 
-.alert {
-    background-color: #3882f6;
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+}
+
+.quote-author {
+    align-self: flex-end;
+}
+
+.alert-box {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.footer {
-
+    background-color: #3882f6;
+    border-radius: 15px;
+    padding: 30px;
+    flex-grow: 1;
 }
